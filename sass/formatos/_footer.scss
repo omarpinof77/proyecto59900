@@ -1,0 +1,33 @@
+/*ESTILOS FOOTER*/
+
+#footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    align-items: center;
+    padding: 20px 0;
+    margin-top: auto;
+}
+.footer_logo img {
+    width: 90px;
+}
+
+
+
+
+.footer_links ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_redes a:nth-child(1) i , .footer_redes a:nth-child(2) i , .footer_redes a:nth-child(3) i {
+    font-size: 25px;
+    margin-left: 10px;
+    color: black;
+    transition: .3s;
+}
+
+.footer_redes a:nth-child(1) i:hover , .footer_redes a:nth-child(2) i:hover , .footer_redes a:nth-child(3) i:hover {
+    filter: drop-shadow(10px 10px 3px black);
+    transition: .3s;
+}

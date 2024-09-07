@@ -1,0 +1,35 @@
+@media screen and (max-width: 1024px) {
+    #imagenes {
+        width: 300px;
+        height: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(11, 150px);
+        grid-template-areas:
+    
+                /*COL 1*/
+
+        /*FILA 1*/"logo-viejo"
+        /*FILA 2*/"landscape-1"
+        /*FILA 3*/"logo-nuevo"
+        /*FILA 4*/"landscape-2"
+        /*FILA 5*/"texto"
+        /*FILA 6*/"landscape-3"
+        /*FILA 7*/"play1"
+        /*FILA 8*/"play2"
+        /*FILA 9*/"play3"
+        /*FILA 10*/"play4"
+        /*FILA 11*/"play5"
+        ;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #footer div {
+        margin-top: 15px;
+    }
+}

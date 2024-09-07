@@ -26,6 +26,36 @@ ul, li {
   display: inline-block;
 }
 
+@media screen and (max-width: 1024px) {
+  #imagenes {
+    width: 300px;
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(11, 150px);
+    grid-template-areas: "logo-viejo" "landscape-1" "logo-nuevo" "landscape-2" "texto" "landscape-3" "play1" "play2" "play3" "play4" "play5";
+  }
+}
+@media screen and (max-width: 480px) {
+  #footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  #footer div {
+    margin-top: 15px;
+  }
+}
+/*ESTILOS NAVBAR/HEADER*/
+#header {
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  background-color: rgba(0, 0, 255, 0.301);
+  backdrop-filter: blur(4px);
+}
+#header .navBar__logo {
+  width: 60px;
+}
+
 body {
   background-color: grey;
   width: 100%;
@@ -41,17 +71,35 @@ body {
   padding-top: 70px;
 }
 
-/*ESTILOS NAVBAR/HEADER*/
-#header {
-  width: 100%;
-  position: fixed;
-  z-index: 100;
-  background-color: rgba(0, 0, 255, 0.301);
-  backdrop-filter: blur(4px);
+/*ESTILOS FOOTER*/
+#footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  align-items: center;
+  padding: 20px 0;
+  margin-top: auto;
 }
 
-.navBar__logo {
-  width: 60px;
+.footer_logo img {
+  width: 90px;
+}
+
+.footer_links ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_redes a:nth-child(1) i, .footer_redes a:nth-child(2) i, .footer_redes a:nth-child(3) i {
+  font-size: 25px;
+  margin-left: 10px;
+  color: black;
+  transition: 0.3s;
+}
+
+.footer_redes a:nth-child(1) i:hover, .footer_redes a:nth-child(2) i:hover, .footer_redes a:nth-child(3) i:hover {
+  filter: drop-shadow(10px 10px 3px black);
+  transition: 0.3s;
 }
 
 /*SECTION BANNER*/
@@ -273,56 +321,6 @@ body {
 
 .consolas__ps5--img img {
   width: 100%;
-}
-
-/*ESTILOS FOOTER*/
-#footer {
-  display: flex;
-  justify-content: space-around;
-  background-color: white;
-  align-items: center;
-  padding: 20px 0;
-  margin-top: auto;
-}
-
-.footer_logo img {
-  width: 90px;
-}
-
-.footer_links ul {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer_redes a:nth-child(1) i, .footer_redes a:nth-child(2) i, .footer_redes a:nth-child(3) i {
-  font-size: 25px;
-  margin-left: 10px;
-  color: black;
-  transition: 0.3s;
-}
-
-.footer_redes a:nth-child(1) i:hover, .footer_redes a:nth-child(2) i:hover, .footer_redes a:nth-child(3) i:hover {
-  filter: drop-shadow(10px 10px 3px black);
-  transition: 0.3s;
-}
-
-@media screen and (max-width: 1024px) {
-  #imagenes {
-    width: 300px;
-    height: auto;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(11, 150px);
-    grid-template-areas: "logo-viejo" "landscape-1" "logo-nuevo" "landscape-2" "texto" "landscape-3" "play1" "play2" "play3" "play4" "play5";
-  }
-}
-@media screen and (max-width: 480px) {
-  #footer {
-    flex-direction: column;
-    text-align: center;
-  }
-  #footer div {
-    margin-top: 15px;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

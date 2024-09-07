@@ -5,56 +5,28 @@
 4-SELECTOR/ETIQUETA
 */
 
+//ESTILOS RESET Y QUERIES
+@import "formatos/reset";
+@import "formatos/breakpoint";
+//ESTILOS HTML
+@import "formatos/header";
+@import "formatos/body-main";
+@import "formatos/footer";
 
-/*FORMATEO DE DOC*/
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-style: none;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    /* border: 2px red solid; */
-}
+//PAGE CONSOLAS
 
-a {
-    text-decoration: none;
-    color: black;
-}
+//PAGE CONTACTO
 
-ul , li {
-    display: inline-block;
-}
+//PAGE IMAGENES
 
-body {
-    background-color: grey;
-    width: 100%;
-}
-
-#main {
-    background-image: url(Images/index/astro-bot.png);
-    background-repeat: no-repeat;
-    background-attachment:fixed;
-    background-size: cover;
-    min-height: 100vh;
-    width: 100%;
-    padding-top: 70px;
-}
+//PAGE INFORMACION
 
 
 
-/*ESTILOS NAVBAR/HEADER*/
-#header {
-    width: 100%;
-    position: fixed;
-    z-index: 100;
-    background-color: rgba(0, 0, 255, 0.301);
-    backdrop-filter: blur(4px);
-}
-.navBar__logo {
-    width: 60px;
-}
+
+
+
+
 
 
 
@@ -298,77 +270,4 @@ body {
 
 .consolas__ps5--img img {
     width: 100%;
-}
-
-/*ESTILOS FOOTER*/
-
-#footer {
-    display: flex;
-    justify-content: space-around;
-    background-color: white;
-    align-items: center;
-    padding: 20px 0;
-    margin-top: auto;
-}
-.footer_logo img {
-    width: 90px;
-}
-
-
-
-
-.footer_links ul {
-    display: flex;
-    flex-direction: column;
-}
-
-.footer_redes a:nth-child(1) i , .footer_redes a:nth-child(2) i , .footer_redes a:nth-child(3) i {
-    font-size: 25px;
-    margin-left: 10px;
-    color: black;
-    transition: .3s;
-}
-
-.footer_redes a:nth-child(1) i:hover , .footer_redes a:nth-child(2) i:hover , .footer_redes a:nth-child(3) i:hover {
-    filter: drop-shadow(10px 10px 3px black);
-    transition: .3s;
-}
-
-
-
-
-@media screen and (max-width: 1024px) {
-    #imagenes {
-        width: 300px;
-        height: auto;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(11, 150px);
-        grid-template-areas:
-    
-                /*COL 1*/
-
-        /*FILA 1*/"logo-viejo"
-        /*FILA 2*/"landscape-1"
-        /*FILA 3*/"logo-nuevo"
-        /*FILA 4*/"landscape-2"
-        /*FILA 5*/"texto"
-        /*FILA 6*/"landscape-3"
-        /*FILA 7*/"play1"
-        /*FILA 8*/"play2"
-        /*FILA 9*/"play3"
-        /*FILA 10*/"play4"
-        /*FILA 11*/"play5"
-        ;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    #footer {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    #footer div {
-        margin-top: 15px;
-    }
 }
